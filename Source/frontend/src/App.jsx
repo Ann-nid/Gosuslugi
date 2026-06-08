@@ -19,8 +19,6 @@ function App() {
     loadData();
   }, []);
 
-
-
   const loadData = () => {    //запросы на бэкэнд и сохранение в память
     axios.get(`${API_URL}/users`).then(res => setUsers(res.data)).catch(err => console.error(err));
     axios.get(`${API_URL}/requests`).then(res => setRequests(res.data)).catch(err => console.error(err));
@@ -35,10 +33,6 @@ function App() {
       })
       .catch(err => console.error(err));
   };
-
-
-
-
 
   const handleAddUser = (e) => {   //собирает данные из полей ввода
     e.preventDefault();
@@ -77,9 +71,6 @@ function App() {
       .then(() => loadData())
       .catch(err => console.error(err));
   };
-
-
-
 
   //Превращение ID города в название
   const getCityName = (cityIdField) => {
@@ -149,7 +140,7 @@ function App() {
         <button type="submit">Добавить в базу</button>
       </form>
 
-      {/* ТАБЛИЦА 1: ГРАЖДАНЕ */}
+    
       <h2>Реестр граждан</h2>
       <table>
         <thead>
@@ -179,7 +170,7 @@ function App() {
         </tbody>
       </table>
 
-      {/* ТАБЛИЦА 2: ЗАЯВКИ */}
+      
       <h2>Реестр заявок на услуги</h2>
       <table>
         <thead>

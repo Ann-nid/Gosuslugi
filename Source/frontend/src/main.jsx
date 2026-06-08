@@ -4,7 +4,7 @@ import './index.css'
 import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>  //проверка на ошибки
+  <StrictMode>  
     <App />  //запуск интерфейса из файла app.jsx 
-  </StrictMode>,
+  </StrictMode>, 
 )

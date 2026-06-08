@@ -3,7 +3,6 @@ import { UsersService } from './users.service';
 import { User } from './entities/user.entity';
 
 
-
 @Controller('users')   //слушает все запросы начинающиеся с /users
 export class UsersController {
   constructor(private readonly usersService: UsersService) {}

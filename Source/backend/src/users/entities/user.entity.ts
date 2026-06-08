@@ -1,7 +1,6 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
 
-
 @Entity('users')      //имя таблицы
 export class User {
   @PrimaryGeneratedColumn()   //указывает чо поле id - первичный ключ
