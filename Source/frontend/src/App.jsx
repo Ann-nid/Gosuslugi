@@ -34,6 +34,8 @@ function App() {
       .catch(err => console.error(err));
   };
 
+
+  
   const handleAddUser = (e) => {   //собирает данные из полей ввода
     e.preventDefault();
     if (!fullName || !email || !selectedCityId) return alert('Заполните все поля!');
